@@ -4,14 +4,14 @@
     "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj": {}
   },
   "projects": {
-    "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj": {
+    "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj",
-        "projectName": "SolarCoffe.Web",
-        "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj",
+        "projectUniqueName": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj",
+        "projectName": "SolarCoffe.Data",
+        "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj",
         "packagesPath": "C:\\Users\\kamja\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\obj\\",
+        "outputPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\kamja\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -37,6 +37,102 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Identity": {
+              "target": "Package",
+              "version": "[2.2.0, )"
+            },
+            "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[3.1.4, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj",
+        "projectName": "SolarCoffe.Web",
+        "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\SolarCoffe.Web.csproj",
+        "packagesPath": "C:\\Users\\kamja\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Web\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kamja\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "projectReferences": {
+              "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj": {
+                "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "target": "Package",
+              "version": "[3.1.5, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[12.0.3, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
