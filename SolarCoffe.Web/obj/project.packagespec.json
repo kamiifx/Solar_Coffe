@@ -18,6 +18,9 @@
         "projectReferences": {
           "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj": {
             "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Data\\SolarCoffe.Data.csproj"
+          },
+          "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Services\\SolarCoffe.Services.csproj": {
+            "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Services\\SolarCoffe.Services.csproj"
           }
         }
       }
