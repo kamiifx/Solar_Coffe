@@ -12,17 +12,16 @@ namespace SolarCoffe.Web.Controllers
 
         public ProductController(ILogger<ProductController> logger, IProductService productService)
         {
-            _logger = logger;
             _productService = productService;
-
+            _logger = logger;
+            
         }
-        
         [HttpGet("/api/product")]
         public ActionResult GetProduct()
         {
-            _logger.LogInformation("Getting Products");
+            _logger.LogInformation("Getting all products");
+            _productService.GetAllProducts();
             return Ok("");
         }
-
     }
 }

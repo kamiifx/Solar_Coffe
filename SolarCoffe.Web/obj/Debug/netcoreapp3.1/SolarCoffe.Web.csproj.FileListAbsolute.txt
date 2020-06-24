@@ -51,3 +51,5 @@ C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\bin\Debug\net
 C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\bin\Debug\netcoreapp3.1\SolarCoffe.Data.dll
 C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\bin\Debug\netcoreapp3.1\SolarCoffe.Data.pdb
 C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\obj\Debug\netcoreapp3.1\SolarCoffe.Web.csproj.CopyComplete
+C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\bin\Debug\netcoreapp3.1\SolarCoffe.Services.dll
+C:\Users\kamja\Documents\ProjectsWebApps\SolarCoffe\SolarCoffe.Web\bin\Debug\netcoreapp3.1\SolarCoffe.Services.pdb
