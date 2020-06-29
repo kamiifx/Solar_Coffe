@@ -1916,7 +1916,8 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kamja\\.nuget\\packages\\": {}
+    "C:\\Users\\kamja\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
@@ -1927,6 +1928,9 @@
       "packagesPath": "C:\\Users\\kamja\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Services\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
         "C:\\Users\\kamja\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"

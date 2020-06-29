@@ -6,6 +6,9 @@
     "projectPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Test\\SolarCoffe.Test.csproj",
     "outputPath": "C:\\Users\\kamja\\Documents\\ProjectsWebApps\\SolarCoffe\\SolarCoffe.Test\\obj\\",
     "projectStyle": "PackageReference",
+    "fallbackFolders": [
+      "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+    ],
     "originalTargetFrameworks": [
       "netcoreapp3.1"
     ],
