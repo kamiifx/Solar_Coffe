@@ -14,9 +14,9 @@ namespace SolarCoffe.Services.Order
     {
         private readonly SolarDbContex _db;
         private readonly ILogger<OrderService> _logger;
-        private readonly ProductService _productService;
-        private readonly InventoryService _inventoryService;
-        public OrderService(SolarDbContex db, ILogger<OrderService> logger, ProductService prodServe, InventoryService invServe )
+        private readonly IProductService _productService;
+        private readonly IInventoryService _inventoryService;
+        public OrderService(SolarDbContex db, ILogger<OrderService> logger, IProductService prodServe, IInventoryService invServe )
         {
             _db = db;
             _logger = logger;
@@ -33,24 +33,52 @@ namespace SolarCoffe.Services.Order
                 .ToList();
         }
 
-        public ServiceResponse<bool> GenerateInvoiceForOrder(SalesOrder order)
+        public ServiceResponse<bool> GenerateOpenOrder(SalesOrder order)
         {
+            _logger.LogInformation("Generating new order");
             foreach (var item in order.SalesOrderItems)
             {
                 item.Product = _productService.GetProductById(item.Product.Id);
-                item.Quantity = item.Quantity;
+                
                 var inventoryId = _inventoryService.GetByProductId(item.Product.Id).Id;
 
                 _inventoryService.UpdateUnitAvailable(inventoryId, -item.Quantity);
+            }
+
+            try
+            {
+                _db.SalesOrders.Add(order);
+                _db.SaveChanges();
+
+                return new ServiceResponse<bool>
+                {
+                    Data = true,
+                    IsSuccess = true,
+                    Message = $"Open order created for: {order.Id}",
+                    Time = DateTime.UtcNow
+                };
+            }
+            catch (Exception e)
+            {
+                return new ServiceResponse<bool>
+                {
+                    IsSuccess = false,
+                    Data = false,
+                    Message = "Error opening order: " + e.StackTrace,
+                    Time = DateTime.UtcNow
+                };
             }
         }
 
         public ServiceResponse<bool> MarkFulfilled(int id)
         {
+            var order = _db.SalesOrders.Find(id);
+            order.UpdatedOn = DateTime.UtcNow;
+            order.IsPaid = true;
+            
             try
             {
-                var order = _db.SalesOrders.Find(id);
-                order.IsPaid = true;
+                _db.SalesOrders.Update(order);
                 _db.SaveChanges();
 
                 return new ServiceResponse<bool>
